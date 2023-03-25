@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://43.139.129.241:3306/vmalldb?serverTimezone=UTC
+      username: vmall
+      password: BpcTor_58662
+  redis:
+    host: 127.0.0.1
+    port: 6379
+custom:
+  jwt:
+    header: Authorization
+    expire: 1
+    # secret: 秘钥(普通字符串) 不能太短，太短可能会导致报错
+    secret: ahw9uh39q8uehdjawjhfoqpw3uip;a4ruq-24524=1-341=4j2340o2ihjo4erh2oh3eq24hj143qa43faw5-
+    # 签发者
+    issuer: panziye
+server:
+  port: 3002
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
