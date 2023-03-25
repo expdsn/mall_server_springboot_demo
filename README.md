@@ -346,5 +346,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 # 4. 注意事项
 
-本项目为前后端分离项目，关于前端的Vue工程请访问 [Vue项目地址]([LauraBest23331/mall_vue_manager_demo (github.com)](https://github.com/LauraBest23331/mall_vue_manager_demo))。
+本项目为前后端分离项目，关于前端的Vue工程请访问 [Vue项目地址](https://github.com/LauraBest23331/mall_vue_manager_demo) 。
 
