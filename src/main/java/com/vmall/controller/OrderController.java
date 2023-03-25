@@ -21,7 +21,7 @@ public class OrderController {
     }
     @GetMapping
     public R getAll() {
-        List<OrderRes> orderList = orderService.getAllOrder();
+        List<Order> orderList = orderService.list();
 
         if (orderList != null)
             return new R(200, "ok", orderList);
@@ -32,7 +32,7 @@ public class OrderController {
     @GetMapping("/{id}")
     public R getById(@PathVariable Long id) {
         JSONObject jsonObject = null;
-        OrderRes order = orderService.getOrderById(id);
+        Order order = orderService.getById(id);
         if (Objects.isNull(order)) {
             return new R(201, "can not find");
         }

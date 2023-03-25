@@ -39,7 +39,7 @@ public class ServiceTest {
     @Test
     public void testOrder() {
         QueryWrapper<Order> queryWrapper = new QueryWrapper<>();
-        System.out.println(orderService.getAllOrder());
+        System.out.println(orderService.list());
     }
     @Test
     public void userGetAll() {

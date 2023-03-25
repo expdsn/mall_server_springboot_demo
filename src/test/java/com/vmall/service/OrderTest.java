@@ -22,7 +22,7 @@ public class OrderTest {
     }
     @Test
     public void  testGetAll() {
-        List<OrderRes> allOrder = orderService.getAllOrder();
+        List<Order> allOrder = orderService.list();
 //        JSONArray jsonArray = new JSONArray();
 //        for (Map<String, Object> entry : allOrder) {
 //            JSONObject jsonObject = new JSONObject(entry);
@@ -35,14 +35,14 @@ public class OrderTest {
     @Test
     public void getOrderById() {
 
-        OrderRes orderById = orderService.getOrderById(1638467774568169474L);
+        Order orderById = orderService.getById(1638467774568169474L);
         System.out.println(orderById);
     }
     @Test
     public void addOrder() {
         Order order = new Order();
         order.setOrderTime(new Date());
-        order.setUId(18111002318L);
+        order.setUId(1639294018448744449L);
         order.setGId(1637814503499350018L);
         orderService.save(order);
     }

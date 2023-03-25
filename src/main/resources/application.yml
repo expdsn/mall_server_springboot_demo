@@ -2,7 +2,7 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://43.139.129.241:3306/vmalldb?serverTimezone=UTC
+      url: jdbc:mysql://localhost:3306/vmalldb?serverTimezone=UTC
       username: vmall
       password: BpcTor_58662
   redis:

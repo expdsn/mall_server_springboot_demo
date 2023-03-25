@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 public interface IOrderService extends IService<Order> {
-    public List<OrderRes> getAllOrder();
-
-    public OrderRes getOrderById(Long id);
+//    public List<Order> getAllOrder();
+//
+//    public Order getOrderById(Long id);
 }

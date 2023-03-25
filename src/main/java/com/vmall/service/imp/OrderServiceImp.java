@@ -13,18 +13,18 @@ import java.util.Map;
 
 @Service
 public class OrderServiceImp extends ServiceImpl<OrderDao, Order> implements IOrderService {
-    private final OrderDao orderDao;
-    @Autowired
-    public OrderServiceImp(OrderDao orderDao){
-        this.orderDao = orderDao;
-    }
-    @Override
-    public List<OrderRes> getAllOrder() {
-        return orderDao.getAllOrder();
-    }
-
-    @Override
-    public OrderRes getOrderById(Long id) {
-        return  orderDao.getOrderById(id);
-    }
+//    private final OrderDao orderDao;
+//    @Autowired
+//    public OrderServiceImp(OrderDao orderDao){
+//        this.orderDao = orderDao;
+//    }
+//    @Override
+//    public List<Order> getAllOrder() {
+//        return orderDao.getAllOrder();
+//    }
+//
+//    @Override
+//    public Order getOrderById(Long id) {
+//        return  orderDao.getOrderById(id);
+//    }
 }

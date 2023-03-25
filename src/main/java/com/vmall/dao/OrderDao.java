@@ -13,8 +13,8 @@ import java.util.Map;
 
 @Mapper
 public interface OrderDao extends BaseMapper<Order> {
-    @Select("select a.id, b._uname,_uid,_gid, c._gname from _order a join _user b on a._uid=b.id join _goods c on a._gid=c.id")
-    List<OrderRes> getAllOrder();
-    @Select("select a.id, b._uname, _uid,_gid,c._gname from _order a join _user b on a._uid=b.id join _goods c on a._gid=c.id where a.id=#{id}")
-    OrderRes getOrderById(Long id);
+//    @Select("select a.id,_orderTime, b._uname,_uid,_gid, c._gname from _order a join _user b on a._uid=b.id join _goods c on a._gid=c.id")
+//    List<Order> getAllOrder();
+//    @Select("select a.id,_orderTime, b._uname, _uid,_gid,c._gname from _order a join _user b on a._uid=b.id join _goods c on a._gid=c.id where a.id=#{id}")
+//    Order getOrderById(Long id);
 }
